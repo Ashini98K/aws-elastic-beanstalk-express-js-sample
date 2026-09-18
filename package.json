@@ -4,7 +4,8 @@
   "description": "Sample Node.js (Express) app for AWS Elastic Beanstalk",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "jest --reporters=default --reporters=jest-junit --ci"
   },
   "repository": {
     "type": "git",
@@ -13,5 +14,16 @@
   "license": "MIT-0",
   "dependencies": {
     "express": "^4.22.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-junit": "^16.0.0",
+    "supertest": "^6.3.4"
+  },
+  "jest-junit": {
+    "outputDirectory": "reports/junit",
+    "outputName": "results.xml",
+    "classNameTemplate": "{classname}",
+    "titleTemplate": "{title}"
   }
 }
