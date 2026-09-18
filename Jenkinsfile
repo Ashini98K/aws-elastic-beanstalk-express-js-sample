@@ -43,7 +43,7 @@ pipeline {
 
     environment {
         // ---- EDIT THIS ----------------------------------------------------
-        DOCKERHUB_NAMESPACE = 'your-dockerhub-username'
+        DOCKERHUB_NAMESPACE = 'ashini98'
         // -------------------------------------------------------------------
         IMAGE_REPO = "${DOCKERHUB_NAMESPACE}/isec6000-express-sample"
         IMAGE_TAG  = "${env.BUILD_NUMBER}"
