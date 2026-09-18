@@ -1,0 +1,16 @@
+# Everything here stays out of the build context: smaller uploads to the
+# daemon, faster builds, and no chance of a stray credential or .git history
+# ending up inside a published image.
+
+node_modules
+npm-debug.log
+.git
+.gitignore
+.github
+reports
+snyk-report.json
+Jenkinsfile
+*.md
+.env
+.dockerignore
+Dockerfile
